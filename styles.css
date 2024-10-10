@@ -1,0 +1,375 @@
+body, h1, p, ul, li, section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1b1a1a;
+    background-image: url('pngtree-black-and-yellow-background-design-vector-picture-image_2025884.jpg');   
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #002b5c;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px; 
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+
+/* Menú */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #010203;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #fdb813;
+}
+
+/* Secciones */
+section {
+    margin: auto 140px;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-color: #eee5e5;
+    background-size: cover;
+    background-position: center;
+} 
+
+/* Sección de Grupos de Investigación */
+#grupos-investigacion {
+    background-color: #f7f1f1;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#grupos-investigacion h2 {
+    font-size: 30px;
+    color: #1e3788;
+    margin-bottom: 20px;
+}
+
+.grupo {
+    background-color: #e7f340;
+    border: 1px solid #050505;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-grupo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.grupo h3 {
+    font-size: 20px;
+    color: #022447;
+    margin-right: 20px;
+}
+
+.grupo p {
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.inscribirse-boton {
+    background-color: #1e3788;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.inscribirse-boton:hover {
+    background-color: #164e8d;
+    transform: scale(1.2);
+}
+
+.inscribirse-boton:active {
+    background-color: #0f3a6f;
+    transform: scale(0.98);
+}
+
+
+/* Sección del formulario */
+#formulario {
+    background-color: #eef124;
+    padding: 25px;
+    border-radius: 0px;
+    max-width: 600px;
+    margin: 20px auto;
+    }
+
+#formulario h2 {
+    font-size: 24px;
+    color: #002b5c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario div {
+    margin-bottom: 15px;
+}
+
+#formulario label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#formulario input:focus,
+#formulario select:focus {
+    border-color: #1e3788;
+    outline: none;
+}
+
+#formulario button {
+    background-color: #1e3788;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #164e8d;
+}
+
+#formulario button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+#formulario button[type="button"]:hover {
+    background-color: #aaa;
+}
+
+/* Botones para las tablas */
+.boton-tabla {
+    background-color: #161513;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-tabla:hover {
+    color: #fdb813;
+}
+
+.contenedor-boton {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.contenedor-tabla {
+    display: none;
+    margin-top: 20px;
+}
+
+.contenedor-tabla.mostrar {
+    display: block;
+}
+
+/* Estilos de tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #161616;
+    color: white;
+}
+
+td {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Lista */
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li {
+    background: rgba(255, 255, 255, 0.2);
+    color: #343a40;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lista li:hover {
+    transform: translateY(-3px);
+}
+
+.lista li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background-color: #007BFF;
+    border-radius: 2px;
+    transform: translateY(-50%);
+}
+
+/* Pie de página */
+.piedepagina {
+    width: 100%;
+    background-color: #010203;
+    color: rgb(145, 151, 156);
+}
+
+.p_horario {
+    font-size: 18px;
+    margin: auto;
+    width: 80%;
+}
+
+.imagen_pie {
+    margin: auto;
+    width: 80%;
+    opacity: 50%;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: auto 20px;
+        padding: 60px 10px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    .lista li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin: 0 10px;
+        padding: 50px 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .lista li {
+        font-size: 12px;
+    }
+}
